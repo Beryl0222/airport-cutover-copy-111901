@@ -1,6 +1,6 @@
-# 机场切换时的旅客通知编写与更正
+# 机场更换候机动线时的多语种旅客指引
 
-notices 是非结构化运行说明，bookings 的 date 是订座服务日，scheduled 和 actual 是带时区的计划与实际时间。channels 给出本地模拟网关的字符预算。receipts 区分实际送达与入账时间，M1 是导入前已派发短信的编号。issuedAt 为说明发出时间。sent 是旧系统实际发出的通知副本，link 为模拟行程入口，送达事实由 receipts 另行记录。
+signs 给出标牌编号、楼层和现场展示文字。corridors 是允许通行的有向边，stepFree 表示全段无阶差。closures 中 notice 是运营员提交的状态说明，corridor 是其附带的关联编号。sessions 保存问路原句话和最后确认为亲眼看到的标牌。channels 的长度以 Unicode 码点计算。
 
 资料保存在 `data/inputs.json`，采用 UTF-8 JSON。记录、人员、地点和业务编号均为合成内容。
 
