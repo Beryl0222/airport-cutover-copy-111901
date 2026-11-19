@@ -87,6 +87,10 @@
       "stepFree": false
     }
   ],
+  "gates": [
+    "G21"
+  ],
+  "helpDesk": "H20",
   "closures": [
     {
       "id": "C1",
