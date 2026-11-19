@@ -1,0 +1,81 @@
+{
+  "notices": [
+    {
+      "id": "N1",
+      "text": "25 日最后一班出港仍从榆湾起飞。26 日零点起新到港航班在鹤岭接机，提前于零点实际落地仍按榆湾接。",
+      "issuedAt": "2026-11-25T20:30:00+08:00"
+    },
+    {
+      "id": "N2",
+      "text": "榆航 615 只改 26 日到港的集合点，其他榆航及本号出港沿用原安排。改在鹤岭东厅三号口集合。",
+      "issuedAt": "2026-11-25T22:20:00+08:00"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "B1",
+      "flight": "YH615",
+      "date": "2026-11-25",
+      "direction": "arrival",
+      "scheduled": "2026-11-25T23:40:00+08:00",
+      "actual": "2026-11-26T00:10:00+08:00",
+      "language": "en"
+    },
+    {
+      "id": "B2",
+      "flight": "YH615",
+      "date": "2026-11-26",
+      "direction": "departure",
+      "scheduled": "2026-11-26T00:20:00+08:00",
+      "actual": null,
+      "language": "zh"
+    },
+    {
+      "id": "B3",
+      "flight": "YH615",
+      "date": "2026-11-26",
+      "direction": "arrival",
+      "scheduled": "2026-11-26T22:40:00+08:00",
+      "actual": null,
+      "language": "zh"
+    }
+  ],
+  "channels": [
+    {
+      "id": "sms-zh",
+      "limit": 64,
+      "unit": "UTF-16 code unit",
+      "longLinkAllowed": true
+    },
+    {
+      "id": "sms-en",
+      "limit": 110,
+      "unit": "UTF-16 code unit",
+      "longLinkAllowed": true
+    },
+    {
+      "id": "itinerary",
+      "limit": null
+    }
+  ],
+  "receipts": [
+    {
+      "id": "R1",
+      "messageId": "M1",
+      "bookingId": "B1",
+      "channel": "sms-en",
+      "deliveredAt": "2026-11-25T22:10:00+08:00",
+      "observedAt": "2026-11-25T22:30:00+08:00"
+    }
+  ],
+  "sent": [
+    {
+      "id": "M1",
+      "bookingId": "B1",
+      "channel": "sms-en",
+      "sentAt": "2026-11-25T21:50:00+08:00",
+      "text": "Meet at Yuwan Arrivals at 00:10.",
+      "link": "/trip/B1"
+    }
+  ]
+}
